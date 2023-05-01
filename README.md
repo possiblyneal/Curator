@@ -10,7 +10,7 @@ Curates your perfect MAME collection based on your preferences. While it runs in
   - Genre/ Category
   - Language
   - Control Types
-- Easily eliminate non-games and screenless games.
+- Easily eliminate non-games, screenless games, devices, bioses, etc.
 - Includes only the samples you need.
 - Keep latest prototype for unreleased games.
 - Optionally recompress in 7z for smaller file sizes.
