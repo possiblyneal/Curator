@@ -4,7 +4,7 @@ Curates your perfect MAME collection based on your preferences. While it runs in
 
 ## Capabilities:
 
-- Excellent clone handling options. Choose best rom variation based on number of players and language. Can prefer US releases.
+- Excellent clone handling options. Can create 1G1R style sets. Choose best rom variation based on number of players and language. Can prefer US releases.
 - Many different filters:
   - Year
   - Genre/ Category
@@ -31,5 +31,5 @@ Curates your perfect MAME collection based on your preferences. While it runs in
 
 - Weblinks are provided for all the download locations for the following:
   - Rebuilder
-  - ini
+  - Languages.ini
   - Catver.ini
