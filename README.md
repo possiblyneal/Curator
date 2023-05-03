@@ -5,11 +5,17 @@ Curates your perfect MAME collection based on your preferences. While it runs in
 ## Capabilities:
 
 - Can create 1G1R style sets. Choose best rom variation based on number of players and language. Can prefer US releases.
-- Many different filters:
+- Many different filters to eliminate games you can't play or don't want to play:
   - Year
-  - Genre/ Category
+  - Genre and category
   - Language
-  - Control Types
+  - Control types
+  - Emulation compatibility
+  - Games requiring CHDs
+  - "Adult" games
+  - NES and SNES games
+  - Prototypes
+  - Hacks and bootlegs
 - Easily eliminate games you wouldn't find in an arcade (non-games, screenless games, devices, bioses, etc.)
 - Includes only the samples you need. Also remove games that require samples you don't have.
 - Keep latest prototype for unreleased games.
