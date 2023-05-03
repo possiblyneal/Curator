@@ -26,7 +26,7 @@ Curates your perfect MAME collection based on your preferences. While it runs in
 - Filter based on community game ratings.
 - GUI – (amateur programmer here so may take a bit)
 - Handle extras like artwork.
-- Please share any ideas you may have! I'm looking for suggestions that make Curator easier to use, results in a more arcade like collection, However as a disclaimer, I'm not interested in supporting things without broad appeal or require the use of data sources that are not maintained or at risk of not being maintained in the near future. That would include most new projects.
+- Please share any ideas you may have! I'm looking for suggestions that make Curator easier to use, results in a more arcade like collection, handles parent/clone selection better or additional filters that would be commonly used. However as a disclaimer, I'm not interested in supporting things without broad appeal or require the use of data sources that are not maintained or at risk of not being maintained in the near future. That would include most new projects.
 
 ## Helper Files (or additional required files):
 
