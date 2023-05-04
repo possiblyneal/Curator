@@ -2,6 +2,9 @@
 
 Curates your perfect MAME collection based on your preferences. While it runs in the terminal, it is made to be easy to understand and use! Lots of explanation is provided at request along the way. It uses the MAME internal database, plus additional files to create filterable attributes for each game. Rebuilder is used to build your collection from source folders.
 
+## Operating System Compatibility:
+Windows 7/8/10/11
+
 ## Capabilities:
 
 - Can create 1G1R style sets. Choose best rom variation based on number of players and language. Can prefer US releases.
