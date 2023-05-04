@@ -41,3 +41,10 @@ Curates your perfect MAME collection based on your preferences. While it runs in
   - Rebuilder.exe
   - Languages.ini
   - Catver.ini
+  
+## Credits
+
+- MAME Development Team - [Website](https://www.mamedev.org/)
+- Roman Scherzer - Creator of Rebuilder - [Website](https://mamedev.emulab.it/clrmamepro/)
+- progetto-SNAPS Team - Maintains the ini files along with many other MAME resources - [Website](https://www.progettosnaps.net/index.php)
+
