@@ -1,0 +1,7 @@
+prompt = "bright_white"
+info = "white"
+processing = "bright_cyan"
+done_processing = "cyan"
+success = "bright_green"
+warning = "yellow"
+error = "red"
