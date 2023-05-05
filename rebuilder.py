@@ -140,7 +140,8 @@ def rebuild(mame_tree, mame_root, rebuilder_exe, roms_folder, chds_folder, sampl
                 "-c", compression,
                 "-m", mode,
                 "-p", "roms",
-                "-f", mame_files_chunk
+                "-f", mame_files_chunk,
+                "-r"
             ]
 
             returncode = subprocess.call(args)
