@@ -60,17 +60,29 @@ def combine_xml_data(mame_exe, catver_file, rebuilder_exe, languages_file, roms_
                     add_folder_names_from_zip(entry.path, roms)
                 progress.advance(task_id)
 
-    # Add zip file names and folder names inside zip files in chd_folder, if it's not "none"
+    # Add file names in chd_folder, if it's not "none"
+    def count_chd_files(chds_folder):
+        count = 0
+        for root, dirs, files in os.walk(chds_folder):
+            for file in files:
+                if file.endswith(".chd"):
+                    count += 1
+        return count
+
+    def add_chds_recursive(chds_folder, chds, progress, task_id):
+        for root, dirs, files in os.walk(chds_folder):
+            for file in files:
+                if file.endswith(".chd"):
+                    chds.add(file.split('.')[0])
+                    progress.advance(task_id)
+
     if chds_folder != "none":
         chds = set()
-        total_chds = sum(1 for _ in os.scandir(chds_folder))
+        total_chds = count_chd_files(chds_folder)
+        
         with loaded_pbar(console=console) as progress:
             task_id = progress.add_task(description="Identifying CHDs", total=total_chds)
-            with os.scandir(chds_folder) as entries:
-                for entry in entries:
-                    if entry.is_file() and entry.name.endswith(".chd"):
-                        chds.add(entry.name.split('.')[0])                     
-                    progress.advance(task_id)
+            add_chds_recursive(chds_folder, chds, progress, task_id)
 
 
     """
