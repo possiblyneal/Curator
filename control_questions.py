@@ -94,7 +94,7 @@ def control(mame_tree, mame_root, rebuilder_exe, roms_folder, chds_folder, sampl
 
     while True:
         print_table()
-        control_type_prompt = Text("What control type(s) would you like to remove from your collection? You may enter multiple control types separated by a comma, or type 'done' to continue:", style=styles.prompt)
+        control_type_prompt = Text("What control type(s) would you like to remove from your collection? Enter the number in the left column to eliminate the corresponding games from your list. You may enter multiple numbers separated by a comma. Type 'done' to continue:", style=styles.prompt)
         user_input = console.input(control_type_prompt).strip()
 
         if user_input.lower() == 'done':

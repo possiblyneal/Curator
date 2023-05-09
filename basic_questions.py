@@ -187,7 +187,10 @@ def questions(mame_tree, mame_root, rebuilder_exe, roms_folder, chds_folder, sam
         response = console.input(sample_prompt_text).lower()
         if response in valid_responses:
             if response == 'info':
-                sample_files = os.listdir(samples_folder)
+                if samples_folder != "none":
+                    sample_files = os.listdir(samples_folder)
+                else:
+                    sample_files = []
                 machines_to_remove = 0
                 for machine in mame_root.findall('machine'):
                     sampleof_attribute = machine.get('sampleof')
@@ -197,7 +200,10 @@ def questions(mame_tree, mame_root, rebuilder_exe, roms_folder, chds_folder, sam
             elif response == 'n':
                 console.print("Ok\n", style=styles.success)
             else:
-                sample_files = os.listdir(samples_folder)
+                if samples_folder != "none":
+                    sample_files = os.listdir(samples_folder)
+                else:
+                    sample_files = []
                 removed_count = 0
                 for machine in mame_root.findall('machine'):
                     sampleof_attribute = machine.get('sampleof')

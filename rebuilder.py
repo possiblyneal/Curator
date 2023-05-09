@@ -5,7 +5,6 @@ import sys
 from rich import print
 from rich.text import Text
 from rich.console import Console
-from rich.emoji import Emoji
 
 import styles
 
@@ -184,7 +183,7 @@ def rebuild(mame_tree, mame_root, rebuilder_exe, roms_folder, chds_folder, sampl
 
     closing_text = Text(f"Successfully created your new collection here: {output_folder}\n", style=styles.success)
     console.print(closing_text)
-    close_text = Text(f"You may now close the window and get playing! {Emoji('slightly_smiling_face')}", style=styles.prompt)
-    console.print(close_text)
+    close_text = Text(f"Press the Enter key to close the window and get playing!", style=styles.prompt)
+    console.input(close_text)
 
     sys.exit(0)

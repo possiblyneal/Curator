@@ -90,9 +90,10 @@ def combine_xml_data(mame_exe, catver_file, rebuilder_exe, languages_file, roms_
     """
 
     # Remove machines not matching a file in the ROM or CHD folders
-
-    mame_root[:] = [machine for machine in mame_root if machine.get('name') in roms or chds]
-
+    if chds_folder != "none":
+        mame_root[:] = [machine for machine in mame_root if machine.get('name') in roms or chds]
+    else:
+        mame_root[:] = [machine for machine in mame_root if machine.get('name') in roms]
     # Print the number of loaded games
     loaded_games_text = Text(f"You have loaded {len(mame_root)} games successfully.\n", style=styles.success)
     console.print(loaded_games_text)

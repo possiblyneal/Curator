@@ -70,7 +70,7 @@ def joystick_ways(mame_root):
 
     while True:
         sorted_combinations = print_control_ways_table()
-        ways_prompt = Text("What control type(s) would you like to remove from your collection? Enter the number in the left column to eliminate the corresponding games from your list. You may enter multiple #s separated by a comma. Type 'done' to continue:", style=styles.prompt)
+        ways_prompt = Text("What control type(s) would you like to remove from your collection? Enter the number in the left column to eliminate the corresponding games from your list. You may enter multiple numbers separated by a comma. Type 'done' to continue:", style=styles.prompt)
         user_input = console.input(ways_prompt)
 
         if user_input.lower() == 'done':
